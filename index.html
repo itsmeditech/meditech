@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="contact" action="/" method="post">
+        <h3>Thông tin sức khỏe bệnh nhân</h3>
+        <div class="col50 colleft">
+          <div class="col50 colleft">
+            <div class="wd50">
+              <label name="">Họ và Tên</label>
+              <input placeholder="Họ và Tên" type="text" required autofocus />
+            </div>
+            <div class="wd50">
+              <label name="">Cân nặng</label>
+              <input placeholder="Cân nặng" type="text" />
+            </div>
+          </div>
+          <div class="col50 colright">
+            <div class="wd50">
+              <label name="">Số điện thoại</label>
+              <input placeholder="Số điện thoại" type="text" />
+            </div>
+            <div class="wd50">
+              <label name="">Huyết áp</label>
+              <input placeholder="Huyết áp" type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col50 colright">
+          <div class="col50 colleft">
+            <div class="wd50">
+              <label name="">Tuổi</label>
+              <input placeholder="Tuổi" type="text" />
+            </div>
+            <div class="wd50">
+              <label name="">Giới tính</label>
+              <br />
+              <select id="gender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+              </select>
+            </div>
+          </div>
+          <div class="col50 colright">
+            <div class="wd50">
+              <label name="">Chiều cao</label>
+              <input placeholder="Chiều cao" type="text" />
+            </div>
+          </div>
+        </div>
+
+        <div class="wd100 question-checkbox">
+          <div class="col50 colleft">
+            <p>Thận</p>
+            <select id="kidney">
+              <option value="false">Bình thường</option>
+              <option value="true">Bất thường</option>
+            </select>
+
+            <p>EGFR</p>
+            <label><input id="EGFR" required /></label>
+            <p>Tâm thu</p>
+            <label><input id="tamthu" required /></label>
+            <p>Kali</p>
+            <label><input id="KALI" required /></label>
+          </div>
+
+          <div class="col50 colright">
+            <p>Albumin</p>
+            <label><input id="ALBUMIN" /></label>
+            <p>BUN</p>
+            <label><input id="BUN" /></label>
+            <p>Tâm trương</p>
+            <label><input id="tamtruong" /></label>
+            <p>Canxi</p>
+            <label><input id="CANXI" /></label>
+          </div>
+        </div>
+        <div class="wd100">
+          <button name="submit" type="submit" id="submit-button">Submit</button>
+        </div>
+      </form>
+
+      <div class="result-box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
